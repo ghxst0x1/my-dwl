@@ -1,0 +1,5 @@
+#!/bin/env sh
+
+pkill dwlb
+pkill slstatus
+/usr/local/bin/dwlb & /usr/local/bin/slstatus -s | /usr/local/bin/dwlb -status-stdin all
